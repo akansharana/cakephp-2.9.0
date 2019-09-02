@@ -1,0 +1,500 @@
+2019-09-02 11:27:26 Error: [MissingControllerException] Controller class PostController could not be found.
+Exception Attributes: array (
+  'class' => 'PostController',
+  'plugin' => NULL,
+)
+Request URL: /cakephp-2.9.0/
+Stack Trace:
+#0 C:\xampp\htdocs\cakephp-2.9.0\app\webroot\index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2019-09-02 11:50:42 Error: [MissingTableException] Table posts for model Post was not found in datasource default.
+Exception Attributes: array (
+  'table' => 'posts',
+  'class' => 'Post',
+  'ds' => 'default',
+)
+Request URL: /cakephp-2.9.0/
+Stack Trace:
+#0 C:\xampp\htdocs\cakephp-2.9.0\lib\Cake\Model\Model.php(3660): Model->setSource('posts')
+#1 C:\xampp\htdocs\cakephp-2.9.0\lib\Cake\Model\Model.php(3038): Model->getDataSource()
+#2 C:\xampp\htdocs\cakephp-2.9.0\lib\Cake\Model\Model.php(3010): Model->_readDataSource('all', Array)
+#3 C:\xampp\htdocs\cakephp-2.9.0\lib\Cake\Controller\Component\PaginatorComponent.php(196): Model->find('all', Array)
+#4 C:\xampp\htdocs\cakephp-2.9.0\app\Controller\PostsController.php(11): PaginatorComponent->paginate()
+#5 [internal function]: PostsController->index()
+#6 C:\xampp\htdocs\cakephp-2.9.0\lib\Cake\Controller\Controller.php(491): ReflectionMethod->invokeArgs(Object(PostsController), Array)
+#7 C:\xampp\htdocs\cakephp-2.9.0\lib\Cake\Routing\Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#8 C:\xampp\htdocs\cakephp-2.9.0\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(PostsController), Object(CakeRequest))
+#9 C:\xampp\htdocs\cakephp-2.9.0\app\webroot\index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#10 {main}
+2019-09-02 11:51:53 Error: [MissingTableException] Table posts for model Post was not found in datasource default.
+Exception Attributes: array (
+  'table' => 'posts',
+  'class' => 'Post',
+  'ds' => 'default',
+)
+Request URL: /cakephp-2.9.0/
+Stack Trace:
+#0 C:\xampp\htdocs\cakephp-2.9.0\lib\Cake\Model\Model.php(3660): Model->setSource('posts')
+#1 C:\xampp\htdocs\cakephp-2.9.0\lib\Cake\Model\Model.php(3038): Model->getDataSource()
+#2 C:\xampp\htdocs\cakephp-2.9.0\lib\Cake\Model\Model.php(3010): Model->_readDataSource('all', Array)
+#3 C:\xampp\htdocs\cakephp-2.9.0\lib\Cake\Controller\Component\PaginatorComponent.php(196): Model->find('all', Array)
+#4 C:\xampp\htdocs\cakephp-2.9.0\app\Controller\PostsController.php(11): PaginatorComponent->paginate()
+#5 [internal function]: PostsController->index()
+#6 C:\xampp\htdocs\cakephp-2.9.0\lib\Cake\Controller\Controller.php(491): ReflectionMethod->invokeArgs(Object(PostsController), Array)
+#7 C:\xampp\htdocs\cakephp-2.9.0\lib\Cake\Routing\Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#8 C:\xampp\htdocs\cakephp-2.9.0\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(PostsController), Object(CakeRequest))
+#9 C:\xampp\htdocs\cakephp-2.9.0\app\webroot\index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#10 {main}
+2019-09-02 11:52:31 Error: [MissingViewException] View file "Posts\index.ctp" is missing.
+Exception Attributes: array (
+  'file' => 'Posts\\index.ctp',
+)
+Request URL: /cakephp-2.9.0/
+Stack Trace:
+#0 C:\xampp\htdocs\cakephp-2.9.0\lib\Cake\View\View.php(470): View->_getViewFileName('Posts\\index')
+#1 C:\xampp\htdocs\cakephp-2.9.0\lib\Cake\Controller\Controller.php(963): View->render(NULL, NULL)
+#2 C:\xampp\htdocs\cakephp-2.9.0\lib\Cake\Routing\Dispatcher.php(200): Controller->render()
+#3 C:\xampp\htdocs\cakephp-2.9.0\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(PostsController), Object(CakeRequest))
+#4 C:\xampp\htdocs\cakephp-2.9.0\app\webroot\index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2019-09-02 12:25:48 Error: [NotFoundException] Invalid post
+Request URL: /cakephp-2.9.0/posts/delete
+Stack Trace:
+#0 [internal function]: PostsController->delete()
+#1 C:\xampp\htdocs\cakephp-2.9.0\lib\Cake\Controller\Controller.php(491): ReflectionMethod->invokeArgs(Object(PostsController), Array)
+#2 C:\xampp\htdocs\cakephp-2.9.0\lib\Cake\Routing\Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#3 C:\xampp\htdocs\cakephp-2.9.0\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(PostsController), Object(CakeRequest))
+#4 C:\xampp\htdocs\cakephp-2.9.0\app\webroot\index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2019-09-02 12:28:21 Warning: Warning (2): Illegal string offset 'Post' in [C:\xampp\htdocs\cakephp-2.9.0\app\View\Posts\view.ctp, line 7]
+Trace:
+ErrorHandler::handleError() - CORE\Cake\Error\ErrorHandler.php, line 230
+include - APP\View\Posts\view.ctp, line 7
+View::_evaluate() - CORE\Cake\View\View.php, line 971
+View::_render() - CORE\Cake\View\View.php, line 933
+View::render() - CORE\Cake\View\View.php, line 473
+Controller::render() - CORE\Cake\Controller\Controller.php, line 963
+Dispatcher::_invoke() - CORE\Cake\Routing\Dispatcher.php, line 200
+Dispatcher::dispatch() - CORE\Cake\Routing\Dispatcher.php, line 167
+[main] - APP\webroot\index.php, line 110
+
+2019-09-02 12:28:21 Warning: Warning (2): Illegal string offset 'id' in [C:\xampp\htdocs\cakephp-2.9.0\app\View\Posts\view.ctp, line 7]
+Trace:
+ErrorHandler::handleError() - CORE\Cake\Error\ErrorHandler.php, line 230
+include - APP\View\Posts\view.ctp, line 7
+View::_evaluate() - CORE\Cake\View\View.php, line 971
+View::_render() - CORE\Cake\View\View.php, line 933
+View::render() - CORE\Cake\View\View.php, line 473
+Controller::render() - CORE\Cake\Controller\Controller.php, line 963
+Dispatcher::_invoke() - CORE\Cake\Routing\Dispatcher.php, line 200
+Dispatcher::dispatch() - CORE\Cake\Routing\Dispatcher.php, line 167
+[main] - APP\webroot\index.php, line 110
+
+2019-09-02 12:28:21 Warning: Warning (2): Illegal string offset 'Post' in [C:\xampp\htdocs\cakephp-2.9.0\app\View\Posts\view.ctp, line 12]
+Trace:
+ErrorHandler::handleError() - CORE\Cake\Error\ErrorHandler.php, line 230
+include - APP\View\Posts\view.ctp, line 12
+View::_evaluate() - CORE\Cake\View\View.php, line 971
+View::_render() - CORE\Cake\View\View.php, line 933
+View::render() - CORE\Cake\View\View.php, line 473
+Controller::render() - CORE\Cake\Controller\Controller.php, line 963
+Dispatcher::_invoke() - CORE\Cake\Routing\Dispatcher.php, line 200
+Dispatcher::dispatch() - CORE\Cake\Routing\Dispatcher.php, line 167
+[main] - APP\webroot\index.php, line 110
+
+2019-09-02 12:28:21 Warning: Warning (2): Illegal string offset 'email' in [C:\xampp\htdocs\cakephp-2.9.0\app\View\Posts\view.ctp, line 12]
+Trace:
+ErrorHandler::handleError() - CORE\Cake\Error\ErrorHandler.php, line 230
+include - APP\View\Posts\view.ctp, line 12
+View::_evaluate() - CORE\Cake\View\View.php, line 971
+View::_render() - CORE\Cake\View\View.php, line 933
+View::render() - CORE\Cake\View\View.php, line 473
+Controller::render() - CORE\Cake\Controller\Controller.php, line 963
+Dispatcher::_invoke() - CORE\Cake\Routing\Dispatcher.php, line 200
+Dispatcher::dispatch() - CORE\Cake\Routing\Dispatcher.php, line 167
+[main] - APP\webroot\index.php, line 110
+
+2019-09-02 12:28:21 Warning: Warning (2): Illegal string offset 'Post' in [C:\xampp\htdocs\cakephp-2.9.0\app\View\Posts\view.ctp, line 17]
+Trace:
+ErrorHandler::handleError() - CORE\Cake\Error\ErrorHandler.php, line 230
+include - APP\View\Posts\view.ctp, line 17
+View::_evaluate() - CORE\Cake\View\View.php, line 971
+View::_render() - CORE\Cake\View\View.php, line 933
+View::render() - CORE\Cake\View\View.php, line 473
+Controller::render() - CORE\Cake\Controller\Controller.php, line 963
+Dispatcher::_invoke() - CORE\Cake\Routing\Dispatcher.php, line 200
+Dispatcher::dispatch() - CORE\Cake\Routing\Dispatcher.php, line 167
+[main] - APP\webroot\index.php, line 110
+
+2019-09-02 12:28:21 Warning: Warning (2): Illegal string offset 'password' in [C:\xampp\htdocs\cakephp-2.9.0\app\View\Posts\view.ctp, line 17]
+Trace:
+ErrorHandler::handleError() - CORE\Cake\Error\ErrorHandler.php, line 230
+include - APP\View\Posts\view.ctp, line 17
+View::_evaluate() - CORE\Cake\View\View.php, line 971
+View::_render() - CORE\Cake\View\View.php, line 933
+View::render() - CORE\Cake\View\View.php, line 473
+Controller::render() - CORE\Cake\Controller\Controller.php, line 963
+Dispatcher::_invoke() - CORE\Cake\Routing\Dispatcher.php, line 200
+Dispatcher::dispatch() - CORE\Cake\Routing\Dispatcher.php, line 167
+[main] - APP\webroot\index.php, line 110
+
+2019-09-02 12:28:21 Warning: Warning (2): Illegal string offset 'Post' in [C:\xampp\htdocs\cakephp-2.9.0\app\View\Posts\view.ctp, line 22]
+Trace:
+ErrorHandler::handleError() - CORE\Cake\Error\ErrorHandler.php, line 230
+include - APP\View\Posts\view.ctp, line 22
+View::_evaluate() - CORE\Cake\View\View.php, line 971
+View::_render() - CORE\Cake\View\View.php, line 933
+View::render() - CORE\Cake\View\View.php, line 473
+Controller::render() - CORE\Cake\Controller\Controller.php, line 963
+Dispatcher::_invoke() - CORE\Cake\Routing\Dispatcher.php, line 200
+Dispatcher::dispatch() - CORE\Cake\Routing\Dispatcher.php, line 167
+[main] - APP\webroot\index.php, line 110
+
+2019-09-02 12:28:21 Warning: Warning (2): Illegal string offset 'phone' in [C:\xampp\htdocs\cakephp-2.9.0\app\View\Posts\view.ctp, line 22]
+Trace:
+ErrorHandler::handleError() - CORE\Cake\Error\ErrorHandler.php, line 230
+include - APP\View\Posts\view.ctp, line 22
+View::_evaluate() - CORE\Cake\View\View.php, line 971
+View::_render() - CORE\Cake\View\View.php, line 933
+View::render() - CORE\Cake\View\View.php, line 473
+Controller::render() - CORE\Cake\Controller\Controller.php, line 963
+Dispatcher::_invoke() - CORE\Cake\Routing\Dispatcher.php, line 200
+Dispatcher::dispatch() - CORE\Cake\Routing\Dispatcher.php, line 167
+[main] - APP\webroot\index.php, line 110
+
+2019-09-02 12:28:21 Warning: Warning (2): Illegal string offset 'Post' in [C:\xampp\htdocs\cakephp-2.9.0\app\View\Posts\view.ctp, line 27]
+Trace:
+ErrorHandler::handleError() - CORE\Cake\Error\ErrorHandler.php, line 230
+include - APP\View\Posts\view.ctp, line 27
+View::_evaluate() - CORE\Cake\View\View.php, line 971
+View::_render() - CORE\Cake\View\View.php, line 933
+View::render() - CORE\Cake\View\View.php, line 473
+Controller::render() - CORE\Cake\Controller\Controller.php, line 963
+Dispatcher::_invoke() - CORE\Cake\Routing\Dispatcher.php, line 200
+Dispatcher::dispatch() - CORE\Cake\Routing\Dispatcher.php, line 167
+[main] - APP\webroot\index.php, line 110
+
+2019-09-02 12:28:21 Warning: Warning (2): Illegal string offset 'created' in [C:\xampp\htdocs\cakephp-2.9.0\app\View\Posts\view.ctp, line 27]
+Trace:
+ErrorHandler::handleError() - CORE\Cake\Error\ErrorHandler.php, line 230
+include - APP\View\Posts\view.ctp, line 27
+View::_evaluate() - CORE\Cake\View\View.php, line 971
+View::_render() - CORE\Cake\View\View.php, line 933
+View::render() - CORE\Cake\View\View.php, line 473
+Controller::render() - CORE\Cake\Controller\Controller.php, line 963
+Dispatcher::_invoke() - CORE\Cake\Routing\Dispatcher.php, line 200
+Dispatcher::dispatch() - CORE\Cake\Routing\Dispatcher.php, line 167
+[main] - APP\webroot\index.php, line 110
+
+2019-09-02 12:28:21 Warning: Warning (2): Illegal string offset 'Post' in [C:\xampp\htdocs\cakephp-2.9.0\app\View\Posts\view.ctp, line 32]
+Trace:
+ErrorHandler::handleError() - CORE\Cake\Error\ErrorHandler.php, line 230
+include - APP\View\Posts\view.ctp, line 32
+View::_evaluate() - CORE\Cake\View\View.php, line 971
+View::_render() - CORE\Cake\View\View.php, line 933
+View::render() - CORE\Cake\View\View.php, line 473
+Controller::render() - CORE\Cake\Controller\Controller.php, line 963
+Dispatcher::_invoke() - CORE\Cake\Routing\Dispatcher.php, line 200
+Dispatcher::dispatch() - CORE\Cake\Routing\Dispatcher.php, line 167
+[main] - APP\webroot\index.php, line 110
+
+2019-09-02 12:28:21 Warning: Warning (2): Illegal string offset 'modified' in [C:\xampp\htdocs\cakephp-2.9.0\app\View\Posts\view.ctp, line 32]
+Trace:
+ErrorHandler::handleError() - CORE\Cake\Error\ErrorHandler.php, line 230
+include - APP\View\Posts\view.ctp, line 32
+View::_evaluate() - CORE\Cake\View\View.php, line 971
+View::_render() - CORE\Cake\View\View.php, line 933
+View::render() - CORE\Cake\View\View.php, line 473
+Controller::render() - CORE\Cake\Controller\Controller.php, line 963
+Dispatcher::_invoke() - CORE\Cake\Routing\Dispatcher.php, line 200
+Dispatcher::dispatch() - CORE\Cake\Routing\Dispatcher.php, line 167
+[main] - APP\webroot\index.php, line 110
+
+2019-09-02 12:28:21 Warning: Warning (2): Illegal string offset 'Post' in [C:\xampp\htdocs\cakephp-2.9.0\app\View\Posts\view.ctp, line 40]
+Trace:
+ErrorHandler::handleError() - CORE\Cake\Error\ErrorHandler.php, line 230
+include - APP\View\Posts\view.ctp, line 40
+View::_evaluate() - CORE\Cake\View\View.php, line 971
+View::_render() - CORE\Cake\View\View.php, line 933
+View::render() - CORE\Cake\View\View.php, line 473
+Controller::render() - CORE\Cake\Controller\Controller.php, line 963
+Dispatcher::_invoke() - CORE\Cake\Routing\Dispatcher.php, line 200
+Dispatcher::dispatch() - CORE\Cake\Routing\Dispatcher.php, line 167
+[main] - APP\webroot\index.php, line 110
+
+2019-09-02 12:28:21 Warning: Warning (2): Illegal string offset 'id' in [C:\xampp\htdocs\cakephp-2.9.0\app\View\Posts\view.ctp, line 40]
+Trace:
+ErrorHandler::handleError() - CORE\Cake\Error\ErrorHandler.php, line 230
+include - APP\View\Posts\view.ctp, line 40
+View::_evaluate() - CORE\Cake\View\View.php, line 971
+View::_render() - CORE\Cake\View\View.php, line 933
+View::render() - CORE\Cake\View\View.php, line 473
+Controller::render() - CORE\Cake\Controller\Controller.php, line 963
+Dispatcher::_invoke() - CORE\Cake\Routing\Dispatcher.php, line 200
+Dispatcher::dispatch() - CORE\Cake\Routing\Dispatcher.php, line 167
+[main] - APP\webroot\index.php, line 110
+
+2019-09-02 12:28:21 Warning: Warning (2): Illegal string offset 'Post' in [C:\xampp\htdocs\cakephp-2.9.0\app\View\Posts\view.ctp, line 41]
+Trace:
+ErrorHandler::handleError() - CORE\Cake\Error\ErrorHandler.php, line 230
+include - APP\View\Posts\view.ctp, line 41
+View::_evaluate() - CORE\Cake\View\View.php, line 971
+View::_render() - CORE\Cake\View\View.php, line 933
+View::render() - CORE\Cake\View\View.php, line 473
+Controller::render() - CORE\Cake\Controller\Controller.php, line 963
+Dispatcher::_invoke() - CORE\Cake\Routing\Dispatcher.php, line 200
+Dispatcher::dispatch() - CORE\Cake\Routing\Dispatcher.php, line 167
+[main] - APP\webroot\index.php, line 110
+
+2019-09-02 12:28:21 Warning: Warning (2): Illegal string offset 'id' in [C:\xampp\htdocs\cakephp-2.9.0\app\View\Posts\view.ctp, line 41]
+Trace:
+ErrorHandler::handleError() - CORE\Cake\Error\ErrorHandler.php, line 230
+include - APP\View\Posts\view.ctp, line 41
+View::_evaluate() - CORE\Cake\View\View.php, line 971
+View::_render() - CORE\Cake\View\View.php, line 933
+View::render() - CORE\Cake\View\View.php, line 473
+Controller::render() - CORE\Cake\Controller\Controller.php, line 963
+Dispatcher::_invoke() - CORE\Cake\Routing\Dispatcher.php, line 200
+Dispatcher::dispatch() - CORE\Cake\Routing\Dispatcher.php, line 167
+[main] - APP\webroot\index.php, line 110
+
+2019-09-02 12:28:21 Warning: Warning (2): Illegal string offset 'Post' in [C:\xampp\htdocs\cakephp-2.9.0\app\View\Posts\view.ctp, line 41]
+Trace:
+ErrorHandler::handleError() - CORE\Cake\Error\ErrorHandler.php, line 230
+include - APP\View\Posts\view.ctp, line 41
+View::_evaluate() - CORE\Cake\View\View.php, line 971
+View::_render() - CORE\Cake\View\View.php, line 933
+View::render() - CORE\Cake\View\View.php, line 473
+Controller::render() - CORE\Cake\Controller\Controller.php, line 963
+Dispatcher::_invoke() - CORE\Cake\Routing\Dispatcher.php, line 200
+Dispatcher::dispatch() - CORE\Cake\Routing\Dispatcher.php, line 167
+[main] - APP\webroot\index.php, line 110
+
+2019-09-02 12:28:21 Warning: Warning (2): Illegal string offset 'id' in [C:\xampp\htdocs\cakephp-2.9.0\app\View\Posts\view.ctp, line 41]
+Trace:
+ErrorHandler::handleError() - CORE\Cake\Error\ErrorHandler.php, line 230
+include - APP\View\Posts\view.ctp, line 41
+View::_evaluate() - CORE\Cake\View\View.php, line 971
+View::_render() - CORE\Cake\View\View.php, line 933
+View::render() - CORE\Cake\View\View.php, line 473
+Controller::render() - CORE\Cake\Controller\Controller.php, line 963
+Dispatcher::_invoke() - CORE\Cake\Routing\Dispatcher.php, line 200
+Dispatcher::dispatch() - CORE\Cake\Routing\Dispatcher.php, line 167
+[main] - APP\webroot\index.php, line 110
+
+2019-09-02 12:28:26 Warning: Warning (2): Illegal string offset 'Post' in [C:\xampp\htdocs\cakephp-2.9.0\app\View\Posts\view.ctp, line 7]
+Trace:
+ErrorHandler::handleError() - CORE\Cake\Error\ErrorHandler.php, line 230
+include - APP\View\Posts\view.ctp, line 7
+View::_evaluate() - CORE\Cake\View\View.php, line 971
+View::_render() - CORE\Cake\View\View.php, line 933
+View::render() - CORE\Cake\View\View.php, line 473
+Controller::render() - CORE\Cake\Controller\Controller.php, line 963
+Dispatcher::_invoke() - CORE\Cake\Routing\Dispatcher.php, line 200
+Dispatcher::dispatch() - CORE\Cake\Routing\Dispatcher.php, line 167
+[main] - APP\webroot\index.php, line 110
+
+2019-09-02 12:28:26 Warning: Warning (2): Illegal string offset 'id' in [C:\xampp\htdocs\cakephp-2.9.0\app\View\Posts\view.ctp, line 7]
+Trace:
+ErrorHandler::handleError() - CORE\Cake\Error\ErrorHandler.php, line 230
+include - APP\View\Posts\view.ctp, line 7
+View::_evaluate() - CORE\Cake\View\View.php, line 971
+View::_render() - CORE\Cake\View\View.php, line 933
+View::render() - CORE\Cake\View\View.php, line 473
+Controller::render() - CORE\Cake\Controller\Controller.php, line 963
+Dispatcher::_invoke() - CORE\Cake\Routing\Dispatcher.php, line 200
+Dispatcher::dispatch() - CORE\Cake\Routing\Dispatcher.php, line 167
+[main] - APP\webroot\index.php, line 110
+
+2019-09-02 12:28:26 Warning: Warning (2): Illegal string offset 'Post' in [C:\xampp\htdocs\cakephp-2.9.0\app\View\Posts\view.ctp, line 12]
+Trace:
+ErrorHandler::handleError() - CORE\Cake\Error\ErrorHandler.php, line 230
+include - APP\View\Posts\view.ctp, line 12
+View::_evaluate() - CORE\Cake\View\View.php, line 971
+View::_render() - CORE\Cake\View\View.php, line 933
+View::render() - CORE\Cake\View\View.php, line 473
+Controller::render() - CORE\Cake\Controller\Controller.php, line 963
+Dispatcher::_invoke() - CORE\Cake\Routing\Dispatcher.php, line 200
+Dispatcher::dispatch() - CORE\Cake\Routing\Dispatcher.php, line 167
+[main] - APP\webroot\index.php, line 110
+
+2019-09-02 12:28:26 Warning: Warning (2): Illegal string offset 'email' in [C:\xampp\htdocs\cakephp-2.9.0\app\View\Posts\view.ctp, line 12]
+Trace:
+ErrorHandler::handleError() - CORE\Cake\Error\ErrorHandler.php, line 230
+include - APP\View\Posts\view.ctp, line 12
+View::_evaluate() - CORE\Cake\View\View.php, line 971
+View::_render() - CORE\Cake\View\View.php, line 933
+View::render() - CORE\Cake\View\View.php, line 473
+Controller::render() - CORE\Cake\Controller\Controller.php, line 963
+Dispatcher::_invoke() - CORE\Cake\Routing\Dispatcher.php, line 200
+Dispatcher::dispatch() - CORE\Cake\Routing\Dispatcher.php, line 167
+[main] - APP\webroot\index.php, line 110
+
+2019-09-02 12:28:26 Warning: Warning (2): Illegal string offset 'Post' in [C:\xampp\htdocs\cakephp-2.9.0\app\View\Posts\view.ctp, line 17]
+Trace:
+ErrorHandler::handleError() - CORE\Cake\Error\ErrorHandler.php, line 230
+include - APP\View\Posts\view.ctp, line 17
+View::_evaluate() - CORE\Cake\View\View.php, line 971
+View::_render() - CORE\Cake\View\View.php, line 933
+View::render() - CORE\Cake\View\View.php, line 473
+Controller::render() - CORE\Cake\Controller\Controller.php, line 963
+Dispatcher::_invoke() - CORE\Cake\Routing\Dispatcher.php, line 200
+Dispatcher::dispatch() - CORE\Cake\Routing\Dispatcher.php, line 167
+[main] - APP\webroot\index.php, line 110
+
+2019-09-02 12:28:26 Warning: Warning (2): Illegal string offset 'password' in [C:\xampp\htdocs\cakephp-2.9.0\app\View\Posts\view.ctp, line 17]
+Trace:
+ErrorHandler::handleError() - CORE\Cake\Error\ErrorHandler.php, line 230
+include - APP\View\Posts\view.ctp, line 17
+View::_evaluate() - CORE\Cake\View\View.php, line 971
+View::_render() - CORE\Cake\View\View.php, line 933
+View::render() - CORE\Cake\View\View.php, line 473
+Controller::render() - CORE\Cake\Controller\Controller.php, line 963
+Dispatcher::_invoke() - CORE\Cake\Routing\Dispatcher.php, line 200
+Dispatcher::dispatch() - CORE\Cake\Routing\Dispatcher.php, line 167
+[main] - APP\webroot\index.php, line 110
+
+2019-09-02 12:28:26 Warning: Warning (2): Illegal string offset 'Post' in [C:\xampp\htdocs\cakephp-2.9.0\app\View\Posts\view.ctp, line 22]
+Trace:
+ErrorHandler::handleError() - CORE\Cake\Error\ErrorHandler.php, line 230
+include - APP\View\Posts\view.ctp, line 22
+View::_evaluate() - CORE\Cake\View\View.php, line 971
+View::_render() - CORE\Cake\View\View.php, line 933
+View::render() - CORE\Cake\View\View.php, line 473
+Controller::render() - CORE\Cake\Controller\Controller.php, line 963
+Dispatcher::_invoke() - CORE\Cake\Routing\Dispatcher.php, line 200
+Dispatcher::dispatch() - CORE\Cake\Routing\Dispatcher.php, line 167
+[main] - APP\webroot\index.php, line 110
+
+2019-09-02 12:28:26 Warning: Warning (2): Illegal string offset 'phone' in [C:\xampp\htdocs\cakephp-2.9.0\app\View\Posts\view.ctp, line 22]
+Trace:
+ErrorHandler::handleError() - CORE\Cake\Error\ErrorHandler.php, line 230
+include - APP\View\Posts\view.ctp, line 22
+View::_evaluate() - CORE\Cake\View\View.php, line 971
+View::_render() - CORE\Cake\View\View.php, line 933
+View::render() - CORE\Cake\View\View.php, line 473
+Controller::render() - CORE\Cake\Controller\Controller.php, line 963
+Dispatcher::_invoke() - CORE\Cake\Routing\Dispatcher.php, line 200
+Dispatcher::dispatch() - CORE\Cake\Routing\Dispatcher.php, line 167
+[main] - APP\webroot\index.php, line 110
+
+2019-09-02 12:28:26 Warning: Warning (2): Illegal string offset 'Post' in [C:\xampp\htdocs\cakephp-2.9.0\app\View\Posts\view.ctp, line 27]
+Trace:
+ErrorHandler::handleError() - CORE\Cake\Error\ErrorHandler.php, line 230
+include - APP\View\Posts\view.ctp, line 27
+View::_evaluate() - CORE\Cake\View\View.php, line 971
+View::_render() - CORE\Cake\View\View.php, line 933
+View::render() - CORE\Cake\View\View.php, line 473
+Controller::render() - CORE\Cake\Controller\Controller.php, line 963
+Dispatcher::_invoke() - CORE\Cake\Routing\Dispatcher.php, line 200
+Dispatcher::dispatch() - CORE\Cake\Routing\Dispatcher.php, line 167
+[main] - APP\webroot\index.php, line 110
+
+2019-09-02 12:28:26 Warning: Warning (2): Illegal string offset 'created' in [C:\xampp\htdocs\cakephp-2.9.0\app\View\Posts\view.ctp, line 27]
+Trace:
+ErrorHandler::handleError() - CORE\Cake\Error\ErrorHandler.php, line 230
+include - APP\View\Posts\view.ctp, line 27
+View::_evaluate() - CORE\Cake\View\View.php, line 971
+View::_render() - CORE\Cake\View\View.php, line 933
+View::render() - CORE\Cake\View\View.php, line 473
+Controller::render() - CORE\Cake\Controller\Controller.php, line 963
+Dispatcher::_invoke() - CORE\Cake\Routing\Dispatcher.php, line 200
+Dispatcher::dispatch() - CORE\Cake\Routing\Dispatcher.php, line 167
+[main] - APP\webroot\index.php, line 110
+
+2019-09-02 12:28:26 Warning: Warning (2): Illegal string offset 'Post' in [C:\xampp\htdocs\cakephp-2.9.0\app\View\Posts\view.ctp, line 32]
+Trace:
+ErrorHandler::handleError() - CORE\Cake\Error\ErrorHandler.php, line 230
+include - APP\View\Posts\view.ctp, line 32
+View::_evaluate() - CORE\Cake\View\View.php, line 971
+View::_render() - CORE\Cake\View\View.php, line 933
+View::render() - CORE\Cake\View\View.php, line 473
+Controller::render() - CORE\Cake\Controller\Controller.php, line 963
+Dispatcher::_invoke() - CORE\Cake\Routing\Dispatcher.php, line 200
+Dispatcher::dispatch() - CORE\Cake\Routing\Dispatcher.php, line 167
+[main] - APP\webroot\index.php, line 110
+
+2019-09-02 12:28:26 Warning: Warning (2): Illegal string offset 'modified' in [C:\xampp\htdocs\cakephp-2.9.0\app\View\Posts\view.ctp, line 32]
+Trace:
+ErrorHandler::handleError() - CORE\Cake\Error\ErrorHandler.php, line 230
+include - APP\View\Posts\view.ctp, line 32
+View::_evaluate() - CORE\Cake\View\View.php, line 971
+View::_render() - CORE\Cake\View\View.php, line 933
+View::render() - CORE\Cake\View\View.php, line 473
+Controller::render() - CORE\Cake\Controller\Controller.php, line 963
+Dispatcher::_invoke() - CORE\Cake\Routing\Dispatcher.php, line 200
+Dispatcher::dispatch() - CORE\Cake\Routing\Dispatcher.php, line 167
+[main] - APP\webroot\index.php, line 110
+
+2019-09-02 12:28:26 Warning: Warning (2): Illegal string offset 'Post' in [C:\xampp\htdocs\cakephp-2.9.0\app\View\Posts\view.ctp, line 40]
+Trace:
+ErrorHandler::handleError() - CORE\Cake\Error\ErrorHandler.php, line 230
+include - APP\View\Posts\view.ctp, line 40
+View::_evaluate() - CORE\Cake\View\View.php, line 971
+View::_render() - CORE\Cake\View\View.php, line 933
+View::render() - CORE\Cake\View\View.php, line 473
+Controller::render() - CORE\Cake\Controller\Controller.php, line 963
+Dispatcher::_invoke() - CORE\Cake\Routing\Dispatcher.php, line 200
+Dispatcher::dispatch() - CORE\Cake\Routing\Dispatcher.php, line 167
+[main] - APP\webroot\index.php, line 110
+
+2019-09-02 12:28:26 Warning: Warning (2): Illegal string offset 'id' in [C:\xampp\htdocs\cakephp-2.9.0\app\View\Posts\view.ctp, line 40]
+Trace:
+ErrorHandler::handleError() - CORE\Cake\Error\ErrorHandler.php, line 230
+include - APP\View\Posts\view.ctp, line 40
+View::_evaluate() - CORE\Cake\View\View.php, line 971
+View::_render() - CORE\Cake\View\View.php, line 933
+View::render() - CORE\Cake\View\View.php, line 473
+Controller::render() - CORE\Cake\Controller\Controller.php, line 963
+Dispatcher::_invoke() - CORE\Cake\Routing\Dispatcher.php, line 200
+Dispatcher::dispatch() - CORE\Cake\Routing\Dispatcher.php, line 167
+[main] - APP\webroot\index.php, line 110
+
+2019-09-02 12:28:26 Warning: Warning (2): Illegal string offset 'Post' in [C:\xampp\htdocs\cakephp-2.9.0\app\View\Posts\view.ctp, line 41]
+Trace:
+ErrorHandler::handleError() - CORE\Cake\Error\ErrorHandler.php, line 230
+include - APP\View\Posts\view.ctp, line 41
+View::_evaluate() - CORE\Cake\View\View.php, line 971
+View::_render() - CORE\Cake\View\View.php, line 933
+View::render() - CORE\Cake\View\View.php, line 473
+Controller::render() - CORE\Cake\Controller\Controller.php, line 963
+Dispatcher::_invoke() - CORE\Cake\Routing\Dispatcher.php, line 200
+Dispatcher::dispatch() - CORE\Cake\Routing\Dispatcher.php, line 167
+[main] - APP\webroot\index.php, line 110
+
+2019-09-02 12:28:26 Warning: Warning (2): Illegal string offset 'id' in [C:\xampp\htdocs\cakephp-2.9.0\app\View\Posts\view.ctp, line 41]
+Trace:
+ErrorHandler::handleError() - CORE\Cake\Error\ErrorHandler.php, line 230
+include - APP\View\Posts\view.ctp, line 41
+View::_evaluate() - CORE\Cake\View\View.php, line 971
+View::_render() - CORE\Cake\View\View.php, line 933
+View::render() - CORE\Cake\View\View.php, line 473
+Controller::render() - CORE\Cake\Controller\Controller.php, line 963
+Dispatcher::_invoke() - CORE\Cake\Routing\Dispatcher.php, line 200
+Dispatcher::dispatch() - CORE\Cake\Routing\Dispatcher.php, line 167
+[main] - APP\webroot\index.php, line 110
+
+2019-09-02 12:28:26 Warning: Warning (2): Illegal string offset 'Post' in [C:\xampp\htdocs\cakephp-2.9.0\app\View\Posts\view.ctp, line 41]
+Trace:
+ErrorHandler::handleError() - CORE\Cake\Error\ErrorHandler.php, line 230
+include - APP\View\Posts\view.ctp, line 41
+View::_evaluate() - CORE\Cake\View\View.php, line 971
+View::_render() - CORE\Cake\View\View.php, line 933
+View::render() - CORE\Cake\View\View.php, line 473
+Controller::render() - CORE\Cake\Controller\Controller.php, line 963
+Dispatcher::_invoke() - CORE\Cake\Routing\Dispatcher.php, line 200
+Dispatcher::dispatch() - CORE\Cake\Routing\Dispatcher.php, line 167
+[main] - APP\webroot\index.php, line 110
+
+2019-09-02 12:28:26 Warning: Warning (2): Illegal string offset 'id' in [C:\xampp\htdocs\cakephp-2.9.0\app\View\Posts\view.ctp, line 41]
+Trace:
+ErrorHandler::handleError() - CORE\Cake\Error\ErrorHandler.php, line 230
+include - APP\View\Posts\view.ctp, line 41
+View::_evaluate() - CORE\Cake\View\View.php, line 971
+View::_render() - CORE\Cake\View\View.php, line 933
+View::render() - CORE\Cake\View\View.php, line 473
+Controller::render() - CORE\Cake\Controller\Controller.php, line 963
+Dispatcher::_invoke() - CORE\Cake\Routing\Dispatcher.php, line 200
+Dispatcher::dispatch() - CORE\Cake\Routing\Dispatcher.php, line 167
+[main] - APP\webroot\index.php, line 110
+
